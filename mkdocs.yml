@@ -1,0 +1,17 @@
+site_name: Ocean Clouds Guide
+pages:
+- Home: 'index.md'
+- 'How to build an app':
+    - 'Create and config your app on oceanclouds': 'dev_app/create_and_config.md'
+    - 'Develop your app': 'dev_app/develop.md'
+    - 'Publish your app': 'dev_app/publish.md'
+- 'How to build a back service':
+    - 'Create and config your back service on oceanclouds': 'dev_backservice/create_and_config.md'
+    - 'Develop your back service': 'dev_backservice/develop.md'
+    - 'Publish your back service': 'dev_backservice/publish.md'
+    - 'Test your back service on oceanclouds': 'dev_backservice/test.md'
+- 'Official back services':
+    - 'How to use standard user service': 'official_backservice/standard_user.md'
+    - 'How to use weibo user service': 'official_backservice/weibo_user.md'
+    - 'How to use facebook user service': 'official_backservice/facebook_user.md'
+    - 'How to use data persistence service': 'official_backservice/persistence.md'
