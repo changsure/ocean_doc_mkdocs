@@ -96,12 +96,12 @@ So, the script can be set up by your safty stretegy. User only can operate or se
 
 ## Search your entity data
 
-You can search your data from the manage console. The criteria rules must follow [Search Entity Data By Criteria](http://doc.oceanclouds.com/api/en/backservice/data_persistence.html).
+You can search your data from the manage console. The criteria rules must follow [Search Entity Data By Criteria](http://doc.oceanclouds.com/api/backservice/data_persistence/#search-entity-data-by-criteria).
 
 
 ## Use service by app
 
-Call persistence API please see the API doc [here](http://doc.oceanclouds.com/api/en/backservice/data_persistence.html).
+Call persistence API please see the API doc [here](http://doc.oceanclouds.com/api/backservice/data_persistence/).
 
 
 

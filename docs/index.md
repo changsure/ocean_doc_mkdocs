@@ -117,13 +117,13 @@ A picture to explain the process.
 	
 1. User Register
 	- App client visit back service register API to create a app user.
-	- Back service will visit oceanclouds api to [create a user](http://doc.oceanclouds.com/api/en/ocean/api_for_backservice.html#Create App User) in the particular app. 
+	- Back service will visit oceanclouds api to [create a user](http://doc.oceanclouds.com/api/ocean/api_for_backservice/#Create App User) in the particular app. 
 1. Login 
 	- App client visit back service API to login by user name/email/cellphone and authenticated by password/cellphone code/QR code.
-	- After back service verified user, the back service will visit oceanclouds API to [fetch this user accessToken](http://doc.oceanclouds.com/api/en/ocean/api_for_backservice.html#Get App User Access Token).
+	- After back service verified user, the back service will visit oceanclouds API to [fetch this user accessToken](http://doc.oceanclouds.com/api/ocean/api_for_backservice/#Get App User Access Token).
 	- The accessToken of app user will return to the app client.
 1. Fetch Ocean Context
-	- App client can use this accessToken to visit oceanclouds API to [fetch **Ocean Context**](http://doc.oceanclouds.com/api/en/ocean/api_for_app_user.html).
+	- App client can use this accessToken to visit oceanclouds API to [fetch **Ocean Context**](http://doc.oceanclouds.com/api/ocean/api_for_app_user/).
 
 Well, we are now ready to talk about **Ocean Context**.
 
@@ -133,7 +133,7 @@ Well, we are now ready to talk about **Ocean Context**.
 
 **Ocean Context** contains which back services app already subscribed, the api address and *Ocean-Auth* encrypt string of these subscribed back services. When visit back service, the ocean clouds standard order the app client use *Ocean-Auth* header to prove its identity, so the back service can tell which app and who visit the service.
 
-You may already found and ask *"If user has not login and fetch the accessCode from oceanclouds, how can he visit back service API to register or login?"* The answer is that app should visit oceanclouds to [fetch a anonymous ocean context](http://doc.oceanclouds.com/api/en/ocean/api_for_app_user.html#Fetch Anonymous App User Ocean Context) first. Then he can visit back service, and the back service will identify this visit is from an ANONYMOUS user. 
+You may already found and ask *"If user has not login and fetch the accessCode from oceanclouds, how can he visit back service API to register or login?"* The answer is that app should visit oceanclouds to [fetch a anonymous ocean context](http://doc.oceanclouds.com/api/ocean/api_for_app_user/#Fetch Anonymous App User Ocean Context) first. Then he can visit back service, and the back service will identify this visit is from an ANONYMOUS user. 
 
 So the whole process is like this
 

@@ -38,7 +38,7 @@ When visit back service, an ocean header is needed to provide the app user infor
 	
 
 ## Fetch Ocean Context
-We already know that ocean context contains the credential for visiting back service. If user has not login, app should call oceanclouds API to [fetch an Anonymous ocean context](http://doc.oceanclouds.com/api/en/ocean/api_for_app_user.html#Fetch Anonymous App User Ocean Context). If user login, app should call the API again to [fetch a new ocean context](http://doc.oceanclouds.com/api/en/ocean/api_for_app_user.html#Fetch Login App User Ocean Context) with app user accessToken credential.
+We already know that ocean context contains the credential for visiting back service. If user has not login, app should call oceanclouds API to [fetch an Anonymous ocean context](http://doc.oceanclouds.com/api/ocean/api_for_app_user/#Fetch Anonymous App User Ocean Context). If user login, app should call the API again to [fetch a new ocean context](http://doc.oceanclouds.com/api/ocean/api_for_app_user/#Fetch Login App User Ocean Context) with app user accessToken credential.
 
 Because oceanclouds does not take responsible for app user authentication, app developer should find an user authenticate back service himself in oceanclouds, and read the back service doc to know details about how to register/login/etc. Oceanclouds provide a [standard user service](../official_backservice/standard_user.md) , [Weibo user service](../official_backservice/weibo_user.md) , [Facebook user service](../official_backservice/facebook_user.md) .
 
@@ -46,7 +46,7 @@ Because oceanclouds does not take responsible for app user authentication, app d
 
 A back service provide service by it's API, app should assemble an ocean header to visit back service. Like `Ocean-Auth:{oceanAuthHeader value from ocean context}` , then the back service will know which app is calling api and which app user is already login.
 
-You can find some sample from http://doc.oceanclouds.com/api/en/backservice/data_persistence.html
+You can find some sample from http://doc.oceanclouds.com/api/backservice/data_persistence/
 
 ## Q&A
 
