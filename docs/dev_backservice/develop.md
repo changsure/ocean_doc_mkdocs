@@ -34,6 +34,7 @@ Oceanclouds will **POST** call back service message api to send a message notice
 ### Call Oceanclouds to deal with message
 
 After you receive the message id, you can follow the steps to handle it
+
 1. Visit ocean [get message api](http://doc.oceanclouds.com/api/ocean/api_for_backservice/#Get Message) to get message detail
 1. Handle the message in your back service system.
 1. Visit ocean [resolve message api](http://doc.oceanclouds.com/api/ocean/api_for_backservice/#Resolve Message) to resolve this message in ocean system. 
